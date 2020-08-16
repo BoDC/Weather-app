@@ -1,0 +1,177 @@
+/** @format */
+
+.container {
+  max-width: 400px;
+  height: 500px;
+  padding: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #4a7496;
+  margin-top: 50px;
+}
+
+#text-input-here {
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  font-family: "Cabin", sans-serif;
+  background-color: #edeef2;
+}
+
+.button {
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Cabin", sans-serif;
+  border: 1.5px solid #edeef2;
+  background-color: #4a7496;
+  color: #edeef2;
+  transition: 250mm ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #edeef2;
+  color: #4a7496;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#huidig {
+  font-size: 15px;
+  text-align: center;
+
+  border-radius: 5px;
+  font-family: "Cabin", sans-serif;
+  border: 1.5px solid #edeef2;
+  background-color: #4a7496;
+  color: #edeef2;
+  transition: 250mm ease-in-out;
+}
+
+#huidig:hover {
+  cursor: pointer;
+  background-color: #edeef2;
+  color: #4a7496;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col {
+  text-align: center;
+  font-size: 13px;
+
+  padding: 13px;
+  color: #edeef2;
+  font-family: "Cabin", sans-serif;
+}
+
+i {
+  padding: 12px;
+  color: #edeef2;
+  font-size: X-large;
+}
+
+h1 {
+  text-align: left;
+  color: #edeef2;
+  padding: 20px 10px 0px 0px;
+  font-family: "Cabin", sans-serif;
+
+  font-weight: 500;
+}
+
+.float-left {
+  position: relative;
+  margin-left: 240px;
+  margin-top: -20px;
+  color: #edeef2;
+  font-family: "Cabin", sans-serif;
+  font-size: 35px;
+}
+
+a {
+  font-size: 15px;
+}
+
+.stripe {
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
+.col-5 {
+  text-align: left;
+  font-family: "Cabin", sans-serif;
+  color: #a9a9a9;
+  margin-top: -15px;
+}
+
+#description {
+  margin-top: 40px;
+  font-family: "Cabin", sans-serif;
+}
+
+small {
+  margin-bottom: 10px;
+  color: #a9a9a9;
+}
+
+.fa-sun {
+  font-size: 125px;
+  position: relative;
+  margin: -25px 10px 0px 50px;
+
+  color: #edeef2;
+}
+
+.fa-wind {
+  text-align: left;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.fa-tint {
+  font-size: 15px;
+  text-align: left;
+  padding: 8px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #edeef2;
+  margin: 40px 0px 20px;
+}
+
+#wind {
+  color: #a9a9a9;
+  padding: 2px;
+}
+
+#humidity {
+  color: #a9a9a9;
+  padding: 2px;
+}
+
+#celsius {
+  color: #a9a9a9;
+  font-weight: bolder;
+  margin-bottom: -20px;
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+}
+
+#fahrenheit {
+  color: #a9a9a9;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+}
+
+#celsius:hover {
+  font-size: 20px;
+  color: #edeef2;
+}
+
+#fahrenheit:hover {
+  font-size: 20px;
+  color: #edeef2;
+}
