@@ -37,6 +37,15 @@ function showTemperature(response) {
 
   let info = document.querySelector("#description");
   info.innerHTML = response.data.weather[0].description;
+
+  celsiusTemperature = response.data.main.temp;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(event) {
@@ -65,15 +74,19 @@ function getCurrentPosition(event) {
 
 function convertToFahrenheit(event) {
   event.preventDefault();
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
+
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
 
 let button = document.querySelector("#huidig");
 button.addEventListener("click", getCurrentPosition);

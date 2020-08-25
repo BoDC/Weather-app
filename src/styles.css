@@ -93,11 +93,6 @@ a {
   font-size: 15px;
 }
 
-.stripe {
-  font-size: 15px;
-  color: #a9a9a9;
-}
-
 .col-5 {
   text-align: left;
   font-family: "Cabin", sans-serif;
@@ -115,12 +110,9 @@ small {
   color: #a9a9a9;
 }
 
-.fa-sun {
-  font-size: 125px;
+#icon {
   position: relative;
-  margin: -25px 10px 0px 50px;
-
-  color: #edeef2;
+  margin-left: 80px;
 }
 
 .fa-wind {
@@ -151,19 +143,32 @@ hr {
   padding: 2px;
 }
 
+.stripe {
+  position: relative;
+  top: -10px;
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
 #celsius {
+  position: relative;
+  top: -10px;
   color: #a9a9a9;
   font-weight: bolder;
   margin-bottom: -20px;
   text-decoration: none;
   font-family: "Cabin", sans-serif;
+  cursor: default;
 }
 
 #fahrenheit {
+  position: relative;
+  top: -10px;
   color: #a9a9a9;
   font-weight: bolder;
   text-decoration: none;
   font-family: "Cabin", sans-serif;
+  cursor: default;
 }
 
 #celsius:hover {
