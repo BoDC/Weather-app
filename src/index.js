@@ -59,13 +59,17 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function search(event) {
-  event.preventDefault();
-  let city = document.querySelector("#text-input-here").value;
+function search(city) {
   let apiKey = "84f9934b2b326e36e6485d8b518ae65b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#text-input-here");
+  search(cityInputElement.value);
 }
 
 function myLocation(position) {
@@ -102,8 +106,9 @@ let celsiusTemperature = null;
 let button = document.querySelector("#huidig");
 button.addEventListener("click", getCurrentPosition);
 
+search("Antwerp");
 let Form = document.querySelector("#search-form");
-Form.addEventListener("submit", search);
+Form.addEventListener("submit", handleSubmit);
 
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", convertToFahrenheit);
