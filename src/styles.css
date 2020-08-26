@@ -103,6 +103,7 @@ a {
 #description {
   margin-top: 40px;
   font-family: "Cabin", sans-serif;
+  text-transform: capitalize;
 }
 
 small {
