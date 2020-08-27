@@ -1,189 +1,174 @@
 /** @format */
-
+body {
+  font-family: "Bebas Neue", cursive;
+}
 .container {
   max-width: 400px;
   height: 500px;
   padding: 30px;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #4a7496;
   margin-top: 50px;
 }
 
 #text-input-here {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   border: none;
   border-radius: 5px;
-  height: 25px;
-  font-family: "Cabin", sans-serif;
-  background-color: #edeef2;
+  height: 30px;
+  background-color: white;
 }
 
 .button {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
+
   border-radius: 5px;
-  font-family: "Cabin", sans-serif;
   border: 1.5px solid #edeef2;
   background-color: #4a7496;
-  color: #edeef2;
+  color: white;
   transition: 250mm ease-in-out;
 }
 .button:hover {
   cursor: pointer;
-  background-color: #edeef2;
+  background-color: white;
   color: #4a7496;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 #huidig {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
-
   border-radius: 5px;
-  font-family: "Cabin", sans-serif;
-  border: 1.5px solid #edeef2;
+  border: 1.5px solid white;
   background-color: #4a7496;
-  color: #edeef2;
+  color: white;
   transition: 250mm ease-in-out;
 }
 
 #huidig:hover {
   cursor: pointer;
-  background-color: #edeef2;
+  background-color: white;
   color: #4a7496;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
-.col {
-  text-align: center;
-  font-size: 13px;
-
-  padding: 13px;
-  color: #edeef2;
-  font-family: "Cabin", sans-serif;
-}
-
-i {
-  padding: 12px;
-  color: #edeef2;
-  font-size: X-large;
-}
-
 h1 {
   text-align: left;
-  color: #edeef2;
-  padding: 20px 10px 0px 0px;
-  font-family: "Cabin", sans-serif;
-
+  padding-top: 20px;
+  color: white;
   font-weight: 500;
+  font-size: 50px;
 }
 
-.float-left {
-  position: relative;
-  margin-left: 240px;
+p {
+  text-align: left;
   margin-top: -20px;
-  color: #edeef2;
-  font-family: "Cabin", sans-serif;
-  font-size: 35px;
+}
+
+.lijst {
+  float: right;
+  list-style-type: none;
+}
+
+.fa-wind {
+  color: white;
+  padding: 0px 10px 0px 0px;
+}
+
+.fa-tint {
+  color: white;
+  padding: 0px 12px 0px 0px;
 }
 
 a {
-  font-size: 15px;
-}
-
-.col-5 {
-  text-align: left;
-  font-family: "Cabin", sans-serif;
-  color: #a9a9a9;
-  margin-top: -15px;
+  font-size: 14px;
 }
 
 #description {
-  margin-top: 40px;
-  font-family: "Cabin", sans-serif;
   text-transform: capitalize;
-}
-
-small {
-  margin-bottom: 10px;
-  color: #a9a9a9;
 }
 
 #icon {
   position: relative;
-  margin-left: 80px;
+  height: 100px;
+  width: 100px;
+  margin-bottom: -20px;
 }
 
-.fa-wind {
-  text-align: left;
-  font-size: 15px;
-  padding: 5px;
+.float-left {
+  position: relative;
+  margin-left: 40px;
 }
 
-.fa-tint {
-  font-size: 15px;
-  text-align: left;
-  padding: 8px;
-}
-
-hr {
-  width: 100%;
-  border: 1px solid #edeef2;
-  margin: 40px 0px 20px;
-}
-
-#wind {
-  color: #a9a9a9;
-  padding: 2px;
-}
-
-#humidity {
-  color: #a9a9a9;
-  padding: 2px;
+.temperature {
+  margin-left: 30px;
+  margin-top: -20px;
+  font-size: 40px;
+  color: white;
 }
 
 .stripe {
   position: relative;
   top: -10px;
   font-size: 15px;
-  color: #a9a9a9;
+  color: #212529;
 }
 
 #celsius {
   position: relative;
   top: -10px;
-  color: #a9a9a9;
+  color: #212529;
   font-weight: bolder;
   margin-bottom: -20px;
   text-decoration: none;
-  font-family: "Cabin", sans-serif;
-  cursor: default;
+  cursor: pointer;
 }
 
 #fahrenheit {
   position: relative;
   top: -10px;
-  color: #a9a9a9;
   font-weight: bolder;
   text-decoration: none;
-  font-family: "Cabin", sans-serif;
-  cursor: default;
+  color: #212529;
+  cursor: pointer;
 }
 
 #celsius:hover {
-  font-size: 20px;
   color: #edeef2;
 }
 
 #fahrenheit:hover {
-  font-size: 20px;
   color: #edeef2;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #edeef2;
+  margin: 200px 0px 20px 0px;
+}
+
+.weather-forecast h3 {
+  text-align: center;
+  font-size: 13px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin-left: -10px;
+  height: 60px;
+  width: 60px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 12px;
 }
 
 h4 {
   text-align: center;
   font-size: 15px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
